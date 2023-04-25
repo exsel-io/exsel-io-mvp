@@ -1,0 +1,63 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+:root {
+  font-family: Montserrat, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-shadow {
+  text-shadow: 4px 4px 6px #E1AC32;
+}
+.wait-list-bg{
+  background-image: linear-gradient(-90deg, #16151C, rgba(0, 0, 0, 0)), url(./assets/portrait-young-african-american-man-with-vr-glasses.svg);
+  background-blend-mode: screen;
+  background-repeat:none;
+  background-size: cover;
+}
+
+.footer-border{
+  border-top:1px solid #fff;
+  position:relative;
+}
+.footer-border::before, .footer-border::after{
+  content:'';
+  position:absolute;
+  top:-3px;
+  height:5px;
+  width:5px;
+  background-color: #fff;
+  border-radius:50%;
+}
+.footer-border::before{
+  left:-2px;
+}
+.footer-border::after{
+  right:-2px;
+}
+
+.list-style-bullet{
+  position: relative;
+}
+.list-style-bullet::before{
+  content:'';
+  position: absolute;
+  top:40%;
+  left:0;
+  height:3px;
+  width:3px;
+  background:#fff;
+}
