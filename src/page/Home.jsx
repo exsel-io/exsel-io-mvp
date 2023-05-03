@@ -2,6 +2,7 @@ import Navbar from '../layout/Navbar'
 import Footer from '../layout/Footer'
 import heroImg from '../assets/hero-img.svg'
 import dropdown_icon from '../assets/Down Button.svg'
+import goal_img from '../assets/medium-shot-happy-colleagues-working-together 1.svg'
 
 const Home = () => {
     return (
@@ -10,6 +11,7 @@ const Home = () => {
             <Hero />
             <ComingSoon />
             <Solutions />
+            <Goals />
             <Footer />
         </>
     )
@@ -89,33 +91,56 @@ const Solutions = () => {
                 <div className="flex justify-between items-center border-b-[1px] border-[#000] py-4">
                     <h2 className="font-bold text-[24px]">E-learning</h2>
                     <div>
-                        <img src={dropdown_icon} alt="Dropdown Icon" className="h-[40px]"/>
+                        <img src={dropdown_icon} alt="Dropdown Icon" className="h-[40px]" />
                     </div>
                 </div>
                 <div className="flex justify-between items-center border-b-[1px] border-[#000] py-5">
                     <h2 className="font-bold text-[24px]">Recruitment Pipeline</h2>
                     <div>
-                        <img src={dropdown_icon} alt="Dropdown Icon" className="h-[40px]"/>
+                        <img src={dropdown_icon} alt="Dropdown Icon" className="h-[40px]" />
                     </div>
                 </div>
                 <div className="flex justify-between items-center border-b-[1px] border-[#000] py-5">
                     <h2 className="font-bold text-[24px]">Incentivization</h2>
                     <div>
-                        <img src={dropdown_icon} alt="Dropdown Icon" className="h-[40px]"/>
+                        <img src={dropdown_icon} alt="Dropdown Icon" className="h-[40px]" />
                     </div>
                 </div>
                 <div className="flex justify-between items-center border-b-[1px] border-[#000] py-5">
                     <h2 className="font-bold text-[24px]">Exsel Hackathon</h2>
                     <div>
-                        <img src={dropdown_icon} alt="Dropdown Icon" className="h-[40px]"/>
+                        <img src={dropdown_icon} alt="Dropdown Icon" className="h-[40px]" />
                     </div>
                 </div>
                 <div className="flex justify-between items-center border-b-[1px] border-[#000] py-5">
                     <h2 className="font-bold text-[24px]">Mentorship</h2>
                     <div>
-                        <img src={dropdown_icon} alt="Dropdown Icon" className="h-[40px]"/>
+                        <img src={dropdown_icon} alt="Dropdown Icon" className="h-[40px]" />
                     </div>
                 </div>
+            </div>
+        </section>
+    );
+}
+
+// Goals
+
+const Goals = () => {
+
+    return (
+        <section className="py-[5rem] bg-[#E1AC3240]">
+            <div className="max-w-[1500px] mx-auto flex justify-between px-6 gap-x-10">
+                <div className="max-w-[40rem] mt-10">
+                    <h1 className="font-bold text-[#090C21] text-[40px]">Our Goals</h1>
+                    <p className="my-5 text-[#090C21]">To create a future where females are empowered to spearhead
+                        the new wave of the internet through a platform that fosters
+                        diversity, inclusivity, and leadership.</p>
+                    <p className="text-[#090C21] text-[19px] font-bold uppercase mb-10">Onboard females to web3</p>
+                    <button className="bg-primary py-3 px-10 rounded-md text-white font-bold">Sign up</button>
+                </div>
+                <figure>
+                    <img src={goal_img} alt="Our Goals" />
+                </figure>
             </div>
         </section>
     );
